@@ -1,0 +1,931 @@
+{
+  "summary": {
+    "date": "2026-10-12",
+    "tools_detected": 25,
+    "total_data_bytes": 18382241792,
+    "skill_names_unique": 112,
+    "skill_installs_total": 284,
+    "multi_tool_skills": 43,
+    "drift_skills": 23,
+    "duplicate_clean": 20,
+    "zombies": 4
+  },
+  "tools": [
+    {
+      "tool": "Claude Code",
+      "category": "终端 Agent",
+      "dir": "~/.claude",
+      "size_bytes": 1788579840,
+      "last_active": "2026-10-12",
+      "skills": 42,
+      "skill_names": [
+        "agent-library",
+        "agent-reach",
+        "codebase-memory",
+        "create-skill",
+        "cross-repo-skill-curation",
+        "daily-report",
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki",
+        "doc-translate",
+        "effort-accounting",
+        "ego-browser",
+        "egress-allowlist",
+        "evolve-skills",
+        "fanout-mainline-ledger",
+        "find-skills",
+        "gitlab-onboarding",
+        "harness-governance",
+        "meeting-archive",
+        "session-sediment",
+        "skill-creator",
+        "skill-finder",
+        "skill-inbox-triage",
+        "specs-engine",
+        "stakeholder-register",
+        "token-audit",
+        "ubiquitous-language",
+        "wechat-channel",
+        "worktree-parallel"
+      ],
+      "sessions": 18,
+      "note": "2 个内部技能按红线只计数"
+    },
+    {
+      "tool": "OpenAI Codex",
+      "category": "终端 Agent",
+      "dir": "~/.codex",
+      "size_bytes": 1438474240,
+      "last_active": "2026-10-12",
+      "skills": 2,
+      "skill_names": [
+        "playwright",
+        "wechat-channel"
+      ],
+      "sessions": 3,
+      "note": ""
+    },
+    {
+      "tool": "Google Gemini",
+      "category": "终端 Agent",
+      "dir": "~/.gemini",
+      "size_bytes": 51720192,
+      "last_active": "2026-10-10",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Grok",
+      "category": "终端 Agent",
+      "dir": "~/.grok",
+      "size_bytes": 0,
+      "last_active": "2026-09-07",
+      "skills": 14,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "WorkBuddy",
+      "category": "桌面 Agent",
+      "dir": "~/.workbuddy",
+      "size_bytes": 9596297216,
+      "last_active": "2026-10-12",
+      "skills": 60,
+      "skill_names": [
+        "API Gateway",
+        "GitHub AI趋势追踪",
+        "GitHub热门项目",
+        "adversarial-review",
+        "ai-repo-engineering-layout",
+        "ai-session-material-miner",
+        "ardot-effect-fallback",
+        "automation-resurrection",
+        "book2vido-video",
+        "boss-autopilot",
+        "browser-skill",
+        "canvas-design",
+        "cc-switch-usage-audit",
+        "constitution-amendment",
+        "de-ai-flavor",
+        "desktop-ai-forensics",
+        "ego-browser",
+        "exam-prep-pmp",
+        "find-skills",
+        "free-token-channel-audit",
+        "git-identity-pin",
+        "git-push-in-sandbox",
+        "github",
+        "github-repo-gallery",
+        "harness-model-upgrade-audit",
+        "hidden-contract-audit",
+        "ip-platform-fit-audit",
+        "library-dashboard-workbench",
+        "ollama-local-ops",
+        "ponytail",
+        "project-whitepaper",
+        "publish-package-review",
+        "published-article-archive",
+        "python-cli-to-macos-app",
+        "readme-frontpage-audit",
+        "repo-rename-desensitize",
+        "ripgrep",
+        "sharepoint-stream-transcript",
+        "skill-creator",
+        "skill-vetter",
+        "specs-engine",
+        "sqlcipher-offline-verify",
+        "svgtopng-cn-fonts",
+        "toolbelt-scan",
+        "wb-usage-cost-audit",
+        "wechat-channel",
+        "wechat-mp-publish",
+        "wechat-tuitu-publish",
+        "x-auto-publish",
+        "xingtu-article-archive",
+        "xingtu-oss-guard",
+        "xingtu-role-audit",
+        "xingtu-token-saver",
+        "xt-automation-ops",
+        "zcode-client-ops",
+        "zcode-session-export",
+        "zero-cost-visuals-iconify",
+        "去AI味",
+        "腾讯文档"
+      ],
+      "sessions": 79,
+      "note": "1 个内部技能按红线只计数"
+    },
+    {
+      "tool": "CodeBuddy",
+      "category": "桌面 Agent",
+      "dir": "~/.codebuddy",
+      "size_bytes": 80523264,
+      "last_active": "2026-10-12",
+      "skills": 15,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki",
+        "ego-browser"
+      ],
+      "sessions": 1,
+      "note": ""
+    },
+    {
+      "tool": "CodeBuddy CN",
+      "category": "桌面 Agent",
+      "dir": "~/.codebuddycn",
+      "size_bytes": 267476992,
+      "last_active": "2026-09-02",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "ZCode",
+      "category": "桌面 Agent",
+      "dir": "~/.zcode",
+      "size_bytes": 322588672,
+      "last_active": "2026-10-12",
+      "skills": 3,
+      "skill_names": [
+        "de-ai-flavor",
+        "ponytail",
+        "publish-package-review"
+      ],
+      "sessions": 3,
+      "note": ""
+    },
+    {
+      "tool": "DSH",
+      "category": "桌面 Agent",
+      "dir": "~/.dsh",
+      "size_bytes": 1585152,
+      "last_active": "2026-09-02",
+      "skills": 1,
+      "skill_names": [],
+      "sessions": 6,
+      "note": "1 个内部技能按红线只计数"
+    },
+    {
+      "tool": "豆包工作",
+      "category": "桌面 Agent",
+      "dir": "~/.dws",
+      "size_bytes": 8966144,
+      "last_active": "2026-09-28",
+      "skills": 2,
+      "skill_names": [
+        "mono",
+        "multi"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "DoubaoWork",
+      "category": "桌面 Agent",
+      "dir": "~/DoubaoWork",
+      "size_bytes": 5566464,
+      "last_active": "2026-10-12",
+      "skills": 1,
+      "skill_names": [
+        "wechat-channel"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "千问办公",
+      "category": "桌面 Agent",
+      "dir": "~/.qwenworkcn",
+      "size_bytes": 461852672,
+      "last_active": "2026-10-09",
+      "skills": 33,
+      "skill_names": [
+        "brand-icon-sourcing",
+        "create-skill",
+        "cross-repo-skill-curation",
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki",
+        "docx",
+        "fanout-mainline-ledger",
+        "find-skills",
+        "harness-governance",
+        "media-generation",
+        "media-generation-premium",
+        "mp-prepublish-draft-verify",
+        "pdf",
+        "plugin-creator",
+        "pptx",
+        "qw-pages",
+        "qw-pages-supabase",
+        "qwenwork-guidance",
+        "skill-inbox-triage",
+        "spec-driven-adversarial-workflow",
+        "xlsx"
+      ],
+      "sessions": 22,
+      "note": ""
+    },
+    {
+      "tool": "Cursor",
+      "category": "IDE",
+      "dir": "~/.cursor",
+      "size_bytes": 780283904,
+      "last_active": "2026-09-29",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Trae",
+      "category": "IDE",
+      "dir": "~/.trae",
+      "size_bytes": 496865280,
+      "last_active": "2026-10-10",
+      "skills": 15,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki",
+        "ego-browser"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Trae CN",
+      "category": "IDE",
+      "dir": "~/.trae-cn",
+      "size_bytes": 271609856,
+      "last_active": "2026-09-07",
+      "skills": 14,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Qoder",
+      "category": "IDE",
+      "dir": "~/.qoder",
+      "size_bytes": 800976896,
+      "last_active": "2026-09-07",
+      "skills": 14,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Lingma",
+      "category": "IDE",
+      "dir": "~/.lingma",
+      "size_bytes": 1154719744,
+      "last_active": "2026-09-07",
+      "skills": 14,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Junie",
+      "category": "IDE",
+      "dir": "~/.junie",
+      "size_bytes": 77824,
+      "last_active": "2026-09-08",
+      "skills": 14,
+      "skill_names": [
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "OpenCode",
+      "category": "终端 Agent",
+      "dir": "~/.config/opencode",
+      "size_bytes": 65036288,
+      "last_active": "2026-10-10",
+      "skills": 1,
+      "skill_names": [
+        "agent-reach"
+      ],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Antigravity",
+      "category": "IDE",
+      "dir": "~/.antigravity",
+      "size_bytes": 93376512,
+      "last_active": "2026-09-02",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Agent 技能池",
+      "category": "技能池",
+      "dir": "~/.agents",
+      "size_bytes": 38170624,
+      "last_active": "2026-10-12",
+      "skills": 45,
+      "skill_names": [
+        "agent-library",
+        "agent-reach",
+        "caveman",
+        "codebase-memory",
+        "create-skill",
+        "cross-repo-skill-curation",
+        "daily-report",
+        "dingtalk-aisearch",
+        "dingtalk-aitable",
+        "dingtalk-calendar",
+        "dingtalk-chat",
+        "dingtalk-contact",
+        "dingtalk-doc",
+        "dingtalk-drive",
+        "dingtalk-event",
+        "dingtalk-mail",
+        "dingtalk-minutes",
+        "dingtalk-misc",
+        "dingtalk-shared",
+        "dingtalk-todo",
+        "dingtalk-wiki",
+        "doc-translate",
+        "effort-accounting",
+        "ego-browser",
+        "egress-allowlist",
+        "evolve-skills",
+        "fanout-mainline-ledger",
+        "find-skills",
+        "gitlab-onboarding",
+        "guizang-ppt-skill",
+        "harness-governance",
+        "meeting-archive",
+        "ponytail",
+        "session-sediment",
+        "skill-creator",
+        "skill-finder",
+        "skill-inbox-triage",
+        "specs-engine",
+        "stakeholder-register",
+        "token-audit",
+        "ubiquitous-language",
+        "wechat-channel",
+        "worktree-parallel"
+      ],
+      "sessions": 7,
+      "note": "2 个内部技能按红线只计数"
+    },
+    {
+      "tool": "Ego Browser",
+      "category": "工具",
+      "dir": "~/.ego-browser",
+      "size_bytes": 12288,
+      "last_active": "2026-10-10",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "CherryStudio",
+      "category": "工具",
+      "dir": "~/.cherrystudio",
+      "size_bytes": 218419200,
+      "last_active": "2026-09-02",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "Chat2DB",
+      "category": "工具",
+      "dir": "~/.chat2db",
+      "size_bytes": 12173312,
+      "last_active": "2025-11-07",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    },
+    {
+      "tool": "CC Switch",
+      "category": "工具",
+      "dir": "~/.cc-switch",
+      "size_bytes": 426889216,
+      "last_active": "2026-10-10",
+      "skills": 0,
+      "skill_names": [],
+      "sessions": null,
+      "note": ""
+    }
+  ],
+  "drift": [
+    {
+      "skill": "agent-reach",
+      "tools": {
+        "Claude Code": "46d3fabf19",
+        "OpenCode": "75aec669c0",
+        "Agent 技能池": "46d3fabf19"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "create-skill",
+      "tools": {
+        "Claude Code": "3915a6d286",
+        "千问办公": "a4d326fb2a",
+        "Agent 技能池": "3915a6d286"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "daily-report",
+      "tools": {
+        "Claude Code": "855c04d9ab",
+        "Agent 技能池": "0c02866685"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-aisearch",
+      "tools": {
+        "Claude Code": "f2b21507f8",
+        "Grok": "f2b21507f8",
+        "CodeBuddy": "f2b21507f8",
+        "千问办公": "9f28fbf2fc",
+        "Trae": "f2b21507f8",
+        "Trae CN": "f2b21507f8",
+        "Qoder": "f2b21507f8",
+        "Lingma": "f2b21507f8",
+        "Junie": "f2b21507f8",
+        "Agent 技能池": "f2b21507f8"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-aitable",
+      "tools": {
+        "Claude Code": "b4ed907950",
+        "Grok": "b4ed907950",
+        "CodeBuddy": "b4ed907950",
+        "千问办公": "3198196df3",
+        "Trae": "b4ed907950",
+        "Trae CN": "b4ed907950",
+        "Qoder": "b4ed907950",
+        "Lingma": "b4ed907950",
+        "Junie": "b4ed907950",
+        "Agent 技能池": "b4ed907950"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-calendar",
+      "tools": {
+        "Claude Code": "4030b11bd2",
+        "Grok": "4030b11bd2",
+        "CodeBuddy": "4030b11bd2",
+        "千问办公": "50a8f112e8",
+        "Trae": "4030b11bd2",
+        "Trae CN": "4030b11bd2",
+        "Qoder": "4030b11bd2",
+        "Lingma": "4030b11bd2",
+        "Junie": "4030b11bd2",
+        "Agent 技能池": "4030b11bd2"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-chat",
+      "tools": {
+        "Claude Code": "3cefa07a01",
+        "Grok": "3cefa07a01",
+        "CodeBuddy": "3cefa07a01",
+        "千问办公": "0039fba913",
+        "Trae": "3cefa07a01",
+        "Trae CN": "3cefa07a01",
+        "Qoder": "3cefa07a01",
+        "Lingma": "3cefa07a01",
+        "Junie": "3cefa07a01",
+        "Agent 技能池": "3cefa07a01"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-contact",
+      "tools": {
+        "Claude Code": "01f2f9f7ae",
+        "Grok": "01f2f9f7ae",
+        "CodeBuddy": "01f2f9f7ae",
+        "千问办公": "2723b279c9",
+        "Trae": "01f2f9f7ae",
+        "Trae CN": "01f2f9f7ae",
+        "Qoder": "01f2f9f7ae",
+        "Lingma": "01f2f9f7ae",
+        "Junie": "01f2f9f7ae",
+        "Agent 技能池": "01f2f9f7ae"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-doc",
+      "tools": {
+        "Claude Code": "e17794ffeb",
+        "Grok": "e17794ffeb",
+        "CodeBuddy": "e17794ffeb",
+        "千问办公": "d827b104d5",
+        "Trae": "e17794ffeb",
+        "Trae CN": "e17794ffeb",
+        "Qoder": "e17794ffeb",
+        "Lingma": "e17794ffeb",
+        "Junie": "e17794ffeb",
+        "Agent 技能池": "e17794ffeb"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-drive",
+      "tools": {
+        "Claude Code": "ab32c09dc1",
+        "Grok": "ab32c09dc1",
+        "CodeBuddy": "ab32c09dc1",
+        "千问办公": "12cef1f40a",
+        "Trae": "ab32c09dc1",
+        "Trae CN": "ab32c09dc1",
+        "Qoder": "ab32c09dc1",
+        "Lingma": "ab32c09dc1",
+        "Junie": "ab32c09dc1",
+        "Agent 技能池": "ab32c09dc1"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-event",
+      "tools": {
+        "Claude Code": "5cb8edafef",
+        "Grok": "5cb8edafef",
+        "CodeBuddy": "5cb8edafef",
+        "千问办公": "3785dcaba9",
+        "Trae": "5cb8edafef",
+        "Trae CN": "5cb8edafef",
+        "Qoder": "5cb8edafef",
+        "Lingma": "5cb8edafef",
+        "Junie": "5cb8edafef",
+        "Agent 技能池": "5cb8edafef"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-mail",
+      "tools": {
+        "Claude Code": "a462e0664d",
+        "Grok": "a462e0664d",
+        "CodeBuddy": "a462e0664d",
+        "千问办公": "8f675cf83e",
+        "Trae": "a462e0664d",
+        "Trae CN": "a462e0664d",
+        "Qoder": "a462e0664d",
+        "Lingma": "a462e0664d",
+        "Junie": "a462e0664d",
+        "Agent 技能池": "a462e0664d"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-minutes",
+      "tools": {
+        "Claude Code": "0423d7c21a",
+        "Grok": "0423d7c21a",
+        "CodeBuddy": "0423d7c21a",
+        "千问办公": "f8ffb926a0",
+        "Trae": "0423d7c21a",
+        "Trae CN": "0423d7c21a",
+        "Qoder": "0423d7c21a",
+        "Lingma": "0423d7c21a",
+        "Junie": "0423d7c21a",
+        "Agent 技能池": "0423d7c21a"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-misc",
+      "tools": {
+        "Claude Code": "28e6a45a96",
+        "Grok": "28e6a45a96",
+        "CodeBuddy": "28e6a45a96",
+        "千问办公": "e600d5a446",
+        "Trae": "28e6a45a96",
+        "Trae CN": "28e6a45a96",
+        "Qoder": "28e6a45a96",
+        "Lingma": "28e6a45a96",
+        "Junie": "28e6a45a96",
+        "Agent 技能池": "28e6a45a96"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-shared",
+      "tools": {
+        "Claude Code": "12e1e89b97",
+        "Grok": "12e1e89b97",
+        "CodeBuddy": "12e1e89b97",
+        "千问办公": "11078d9694",
+        "Trae": "12e1e89b97",
+        "Trae CN": "12e1e89b97",
+        "Qoder": "12e1e89b97",
+        "Lingma": "12e1e89b97",
+        "Junie": "12e1e89b97",
+        "Agent 技能池": "12e1e89b97"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-todo",
+      "tools": {
+        "Claude Code": "4e45015fc3",
+        "Grok": "4e45015fc3",
+        "CodeBuddy": "4e45015fc3",
+        "千问办公": "61cbd708df",
+        "Trae": "4e45015fc3",
+        "Trae CN": "4e45015fc3",
+        "Qoder": "4e45015fc3",
+        "Lingma": "4e45015fc3",
+        "Junie": "4e45015fc3",
+        "Agent 技能池": "4e45015fc3"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "dingtalk-wiki",
+      "tools": {
+        "Claude Code": "c5c0efb11e",
+        "Grok": "c5c0efb11e",
+        "CodeBuddy": "c5c0efb11e",
+        "千问办公": "e21347b0e8",
+        "Trae": "c5c0efb11e",
+        "Trae CN": "c5c0efb11e",
+        "Qoder": "c5c0efb11e",
+        "Lingma": "c5c0efb11e",
+        "Junie": "c5c0efb11e",
+        "Agent 技能池": "c5c0efb11e"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "ego-browser",
+      "tools": {
+        "Claude Code": "ac17c5fe83",
+        "WorkBuddy": "ac17c5fe83",
+        "CodeBuddy": "65e5e299fa",
+        "Trae": "ac17c5fe83",
+        "Agent 技能池": "ac17c5fe83"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "find-skills",
+      "tools": {
+        "Claude Code": "fb55b9cd3d",
+        "WorkBuddy": "9f36872c6e",
+        "千问办公": "69858ec1d3",
+        "Agent 技能池": "fb55b9cd3d"
+      },
+      "versions": 3
+    },
+    {
+      "skill": "session-sediment",
+      "tools": {
+        "Claude Code": "4a7513e01f",
+        "Agent 技能池": "6f797d02ee"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "skill-creator",
+      "tools": {
+        "Claude Code": "17e4755b39",
+        "WorkBuddy": "a4e822e467",
+        "Agent 技能池": "9680cfa31e"
+      },
+      "versions": 3
+    },
+    {
+      "skill": "skill-finder",
+      "tools": {
+        "Claude Code": "0e664dd1d6",
+        "Agent 技能池": "6bd4e2f28b"
+      },
+      "versions": 2
+    },
+    {
+      "skill": "worktree-parallel",
+      "tools": {
+        "Claude Code": "1790063043",
+        "Agent 技能池": "5cf40cae55"
+      },
+      "versions": 2
+    }
+  ],
+  "duplicate_clean": [
+    "agent-library",
+    "codebase-memory",
+    "cross-repo-skill-curation",
+    "de-ai-flavor",
+    "doc-translate",
+    "effort-accounting",
+    "egress-allowlist",
+    "evolve-skills",
+    "fanout-mainline-ledger",
+    "gitlab-onboarding",
+    "harness-governance",
+    "meeting-archive",
+    "ponytail",
+    "publish-package-review",
+    "skill-inbox-triage",
+    "specs-engine",
+    "stakeholder-register",
+    "token-audit",
+    "ubiquitous-language",
+    "wechat-channel"
+  ],
+  "zombies": [
+    "豆包工作:multi",
+    "Agent 技能池:guizang-ppt-skill",
+    "Agent 技能池:ponytail",
+    "Agent 技能池:caveman"
+  ],
+  "meta": {
+    "generator": "toolbelt-scan/toolbelt_scan.py",
+    "redline": "结构模式+外挂词表 0 命中后落盘；红线技能名只计数不列名",
+    "wordlist_loaded": true,
+    "zombie_hidden_by_redline": 1,
+    "read_only": true
+  }
+}

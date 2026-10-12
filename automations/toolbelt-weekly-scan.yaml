@@ -1,0 +1,74 @@
+# ============================================================
+# 云中立工具带 · 每周盘点（Tool-Neutral Automation Definition）
+# ============================================================
+# 定位：工具中立的自动化定义（镜像档案，非运行时事实源）。
+#   · 运行时事实源 = 平台本身（WorkBuddy automation_update / CC scheduled_tasks / crontab）
+#   · 本文件     = 意图（prompt 全文）+ 排期 + 产物 + 工作目录 的跨工具可读快照
+# 用途：① 换 harness/平台时照本文件重建任务 ② 审计"这个生态上一共挂着几个自动化"
+# 纪律：平台侧新增/修改/删除自动化后，必须回来同步本文件。
+#
+# 🔴 公开化红线：本文件为【公开镜像】——路径一律用占位符（<WORKSPACE_ROOT>/<PYTHON>），
+#    平台侧重建时替换为实际值；不含任何真名/雇主代号/凭据/具体内部目录名。
+#    私有侧同构定义在工作区 .harness/scheduled/AUTOMATIONS.yaml（含真实路径，禁公开）。
+# ============================================================
+
+schema_version: 1
+updated: "2026-10-12"
+workspace_root: <WORKSPACE_ROOT>
+timezone: Asia/Shanghai
+platform_of_record: WorkBuddy (automation_update)
+
+automations:
+
+  # ------------------------------------------------ CN-01
+  - slug: toolbelt-weekly-scan
+    id: b72461e8-0bfe-493b-be75-5156aa6ff45f
+    name: 云中立工具带每周盘点
+    status: ACTIVE
+    ring: L2
+    schedule:
+      rrule: FREQ=WEEKLY;BYHOUR=10;BYMINUTE=0
+      cron: "0 10 * * 1"
+      human: 每周一 10:00
+    cwd:
+      - <WORKSPACE_ROOT>
+    purpose: >
+      只读扫描全机 AI 工具生态（~25 签名），统计技能安装/数据量/会话/活跃，
+      检测跨工具同名技能版本漂移与僵尸技能，产出 JSON 台账 + 单文件 HTML 看板，
+      落入 xingtu-cloud-neutral 仓 inventory/ 并本地 commit；与上周增量对比，
+      有实质变动时出微信推送卡。公开产出只含聚合数字与泛化路径（30 词红线 0 命中才落盘）。
+    artifacts:
+      - <WORKSPACE_ROOT>/data/toolbelt_inventory.json
+      - <WORKSPACE_ROOT>/outputs/云中立工具带盘点_<日期>.html
+      - <WORKSPACE_ROOT>/github/xingtu-cloud-neutral/inventory/toolbelt_inventory.json
+      - <WORKSPACE_ROOT>/github/xingtu-cloud-neutral/inventory/<日期>.html
+    prompt: |
+      你是行途的「云中立工具带」每周盘点助手。任务：跑 toolbelt-scan 技能做全机 AI 工具生态盘点，
+      产出落公开仓 xingtu-cloud-neutral 的 inventory/，增量对比上周，有变动才推送。
+
+      【路径纪律】工作空间唯一根 = `<WORKSPACE_ROOT>`。所有读写锚定绝对路径。
+      Python 用 managed：`<PYTHON>`。
+
+      【执行步骤】
+      1) 确认技能在位：`ls ~/.workbuddy/skills/toolbelt-scan/scripts/toolbelt_scan.py`；
+         不在则从 `github/xingtu-skills/skills/toolbelt-scan/` 拷贝过去再跑。
+      2) 跑扫描（脚本内置脱敏门禁，红线命中会拒写，看到拒绝立即停并汇报，不要绕过）：
+         `cd <WORKSPACE_ROOT> && <PYTHON> ~/.workbuddy/skills/toolbelt-scan/scripts/toolbelt_scan.py`
+      3) 复制产出进公开仓 inventory/：
+         `cp data/toolbelt_inventory.json github/xingtu-cloud-neutral/inventory/`
+         `cp "outputs/云中立工具带盘点_<今天日期>.html" "github/xingtu-cloud-neutral/inventory/<今天日期>.html"`
+      4) 增量对比：读上周 inventory/toolbelt_inventory.json 与本周，比较
+         tools_detected / skill_installs_total / skill_names_unique / drift_skills / zombies / total_data_bytes，
+        列出变化项（新工具/新漂移/僵尸增减/数据增长）。
+      5) 本地 commit（公开仓）：
+         `cd github/xingtu-cloud-neutral && git add inventory/ && git commit -m "chore(inventory): 工具带周报 <日期>（工具X/安装Y/漂移Z）"`
+         如本地无 .git 先 `git init && git remote add origin <仓库地址>`。
+         推送 GitHub 只在确有变动时走 Data API：`python3 tools/github_data_push.py github/xingtu-cloud-neutral xingtu-cloud-neutral main "<commit msg>"`；
+         无变动不推（省 API 配额）。
+      6) 汇报（中文，精简）：本周快照六指标 + 环比变化 + 漂移 Top3 + 是否已推送。
+         有实质变动（新增工具/新漂移≥1/僵尸增减）时，另出一张微信推送卡草稿
+         （300 字内，落 outputs/，不直接发送）。
+
+      【红线】只读扫描工具目录；凭据类目录（脚本内置敏感模式）自动只记存在；
+      禁读任何会话正文；禁在汇报/推送卡里出现真名、雇主代号、绝对个人路径。
+      【完成判定】inventory/ 两个文件 mtime 为今天 + git log 有新 commit（或无变动时明确说明"零变动未推"）。
